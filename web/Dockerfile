@@ -1,5 +1,5 @@
-# Use a more recent and full Rust image for better compatibility and toolchain stability
-FROM rust:1.80-bookworm
+# Use the latest stable Rust image as of June 2026 for compatibility with Edition 2024
+FROM rust:1.96-bookworm
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
