@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<article class="chapter" data-chapter="{{ current_chapter }}">
+  <header class="chapter-header">
+    <span class="chapter-label">Part {{ chapter_number }}</span>
+    <h1 class="chapter-title">{{ chapter_title }}</h1>
+  </header>
+
+  <div class="chapter-body">
+    {% if is_chapter_01 %}{% include "chapters/01.html" %}{% endif %}
+    {% if is_chapter_02 %}{% include "chapters/02.html" %}{% endif %}
+    {% if is_chapter_03 %}{% include "chapters/03.html" %}{% endif %}
+    {% if is_chapter_04 %}{% include "chapters/04.html" %}{% endif %}
+    {% if is_chapter_05 %}{% include "chapters/05.html" %}{% endif %}
+    {% if is_chapter_06 %}{% include "chapters/06.html" %}{% endif %}
+    {% if is_chapter_07 %}{% include "chapters/07.html" %}{% endif %}
+    {% if is_chapter_08 %}{% include "chapters/08.html" %}{% endif %}
+    {% if is_chapter_09 %}{% include "chapters/09.html" %}{% endif %}
+    {% if is_chapter_10 %}{% include "chapters/10.html" %}{% endif %}
+    {% if is_chapter_11 %}{% include "chapters/11.html" %}{% endif %}
+    {% if is_chapter_12 %}{% include "chapters/12.html" %}{% endif %}
+    {% if is_chapter_13 %}{% include "chapters/13.html" %}{% endif %}
+    {% if is_chapter_14 %}{% include "chapters/14.html" %}{% endif %}
+    {% if is_chapter_15 %}{% include "chapters/15.html" %}{% endif %}
+  </div>
+
+  <nav class="chapter-nav" aria-label="Chapter navigation">
+    {% if prev_slug %}<a href="/chapter/{{ prev_slug }}" class="chapter-nav-link prev">&larr; Previous</a>{% endif %}
+    <a href="/" class="chapter-nav-link home">Contents</a>
+    {% if next_slug %}<a href="/chapter/{{ next_slug }}" class="chapter-nav-link next">Next &rarr;</a>{% endif %}
+  </nav>
+</article>
+{% endblock %}

@@ -1,0 +1,13 @@
+# PART ELEVEN: THE BREAK
+
+At some point, I almost gave up. No, let me be more honest. At some point, I did give up. I stopped. I put the code down. I closed the terminal. I stopped applying. I stopped building. I stopped trying to be seen by an industry that seemed determined not to see me.
+
+I was done. Finished. The frustration had built up for so long, layer upon layer, the rejections, the racism, the being called overqualified and underqualified in the same breath, the silence after open- sourcing something years ahead of its time, the shadow engineering, the skipped meals, the video calls that ended when my face appeared. It all piled up until something in me just said: fuck it. I'm out.
+
+But here's the thing about having a mind like mine, it doesn't stop. It doesn't rest. It doesn't know how to be empty. Even when I had decided I was done with tech, my brain was still hungry for something to chew on. It needed input. It needed complexity. It needed systems to understand.
+
+So I went somewhere else entirely. I studied criminal psychology. Criminology. Forensic psychology. General psychology. The deep stuff, not just pop psychology articles, but the actual research, the case studies, the frameworks for understanding why people do what they do. Criminal behavior. Mental illness. Personality disorders. The systems of the mind, the architecture of human behavior. If I couldn't build systems in code anymore, I would build systems in understanding. If I couldn't debug software, I would debug people.
+
+And I got good at it. Of course I did. Because that's what I do. I go deep. I don't know how to go shallow. The same obsessive, layer-peeling, nothing-is-enough-until-I-understand-the-foundation approach that I applied to programming, I applied to psychology. I learned about the dark things. The reasons people hurt each other. The patterns behind violence. The way trauma echoes through generations. The way a mind can be both brilliant and broken. It was fascinating and disturbing and exactly what my brain needed: a new domain to master, a new kind of system to understand.
+
+But even that wasn't permanent. The code came back. It always comes back. Because the code is not just what I do, it's part of how I think. I can't separate them. The break wasn't really a break. It was a detour. A necessary one. A survival mechanism. When the thing you love keeps rejecting you, sometimes you have to walk away for a while just to remember you exist outside of it. But you don't stop being who you are. And who I am is someone who builds.

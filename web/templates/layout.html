@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page_title }}</title>
+  <meta name="description" content="{{ page_description }}">
+  <meta name="author" content="Meshack Bahati Ouma">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://thelongmiddle.com{{ canonical_url }}">
+
+  <meta property="og:type" content="book">
+  <meta property="og:title" content="{{ page_title }}">
+  <meta property="og:description" content="{{ page_description }}">
+  <meta property="og:site_name" content="The Long Middle: Built First, Seen Last">
+  <meta property="og:url" content="https://thelongmiddle.com{{ canonical_url }}">
+  <meta property="og:locale" content="en_US">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page_title }}">
+  <meta name="twitter:description" content="{{ page_description }}">
+
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "name": "The Long Middle: Built First, Seen Last",
+    "author": {
+      "@type": "Person",
+      "name": "Meshack Bahati Ouma"
+    },
+    "description": "A first-person memoir about building AI systems, cybersecurity platforms, and Rust frameworks years ahead of their time while remaining invisible in the global tech industry.",
+    "genre": "Memoir",
+    "inLanguage": "en",
+    "datePublished": "2026",
+    "about": [
+      {"@type": "Thing", "name": "Software Engineering"},
+      {"@type": "Thing", "name": "Artificial Intelligence"},
+      {"@type": "Thing", "name": "Cybersecurity"},
+      {"@type": "Thing", "name": "Rust Programming"}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="progress-bar" id="progress-bar"></div>
+
+  <button class="toc-toggle" id="toc-toggle" aria-label="Table of Contents" title="Table of Contents">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  </button>
+
+  <nav class="toc-sidebar" id="toc-sidebar" aria-label="Table of Contents">
+    <div class="toc-header">
+      <h2>Contents</h2>
+      <button class="toc-close" id="toc-close" aria-label="Close">&times;</button>
+    </div>
+    <ol class="toc-list">
+      {% for chapter in chapters %}
+      <li>
+        <a href="/chapter/{{ chapter.slug }}" class="toc-link">{{ chapter.title }}</a>
+      </li>
+      {% endfor %}
+    </ol>
+  </nav>
+
+  <main class="content" id="main-content">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-credit">Written by Meshack Bahati Ouma. All rights reserved.</p>
+      <div class="footer-actions">
+        <a href="/downloads/the-long-middle.pdf" class="footer-download" download>Download PDF</a>
+        <a href="/downloads/the-long-middle.epub" class="footer-download" download>Download EPUB</a>
+      </div>
+      <p class="footer-framework">Made with <a href="https://oxidite.g24sec.com">Oxidite <img src="https://github.com/meshackbahati/rust-oxidite/blob/main/docs/logo/oxidite.svg?raw=true" alt="Oxidite" class="oxidite-logo" width="16" height="16"></a> &middot; <a href="https://crates.io/crates/oxidite">crates.io</a></p>
+    </div>
+  </footer>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
