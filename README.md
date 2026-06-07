@@ -64,7 +64,7 @@ Read the raw manuscript directly in the `markdown-version/` folder. Each part is
 ## Downloads
 
 - [Download PDF](web/public/downloads/the-long-middle.pdf)
-- EPUB (coming soon)
+- [Download EPUB](web/public/downloads/the-long-middle.epub)
 
 ---
 
