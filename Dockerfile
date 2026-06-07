@@ -10,9 +10,12 @@ RUN apt-get update && apt-get install -y \
 ENV CARGO_NET_RETRY=10
 ENV CARGO_REGISTRY_SPARSE=false
 
-WORKDIR /usr/src/app
+# Create structure to match "../../rust-oxidite" relative path
+WORKDIR /usr/src
+COPY rust-oxidite ./rust-oxidite
+COPY web ./the-long-middle/web
 
-COPY . .
+WORKDIR /usr/src/the-long-middle/web
 
 RUN sed -i 's/host = "127.0.0.1"/host = "0.0.0.0"/g' oxidite.toml
 

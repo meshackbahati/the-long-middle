@@ -31,9 +31,13 @@ async fn sitemap(_req: Request) -> Result<Response> {
 
     xml.push_str("\n</urlset>");
 
-    Ok(Response::new(oxidite::http::StatusCode::OK)
-        .header("Content-Type", "application/xml")
-        .body(xml))
+    let mut res = Response::text(xml);
+    res.headers_mut().insert(
+        "content-type",
+        oxidite::HeaderValue::from_static("application/xml"),
+    );
+
+    Ok(res)
 }
 
 #[derive(Clone, Serialize)]
