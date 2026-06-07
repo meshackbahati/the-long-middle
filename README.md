@@ -59,6 +59,10 @@ Read the raw manuscript directly in the `markdown-version/` folder. Each part is
 | 14 | [The Open Question](markdown-version/14-the-open-question.md) | `markdown-version/14-the-open-question.md` |
 | 15 | [A Note on What Comes Next](markdown-version/15-a-note-on-what-comes-next.md) | `markdown-version/15-a-note-on-what-comes-next.md` |
 
+## Web Version
+
+Read the web version online at [thelongmiddle.g24sec.com](https://thelongmiddle.g24sec.com)
+
 ---
 
 ## Downloads
