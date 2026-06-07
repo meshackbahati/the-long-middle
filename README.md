@@ -10,7 +10,7 @@
 
 Read the interactive web version with immersive layout, progress tracking, and theme control.
 
-**[Read the web version](https://thelongmiddle.com)**
+**[Read the web version](https://thelongmiddle.g24sec.com)**
 
 Features:
 - Reading progress indicator
