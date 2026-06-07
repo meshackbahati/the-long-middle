@@ -5,6 +5,35 @@ use serde::Serialize;
 pub fn register(router: &mut Router) {
     router.get("/", index);
     router.get("/chapter/:slug", chapter);
+    router.get("/sitemap.xml", sitemap);
+}
+
+async fn sitemap(_req: Request) -> Result<Response> {
+    let mut xml = String::from(r#"<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://thelongmiddle.g24sec.com/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>"#);
+
+    for (slug, _) in CHAPTERS {
+        xml.push_str(&format!(
+            r#"
+    <url>
+        <loc>https://thelongmiddle.g24sec.com/chapter/{}</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>"#,
+            slug
+        ));
+    }
+
+    xml.push_str("\n</urlset>");
+
+    Ok(Response::new(oxidite::http::StatusCode::OK)
+        .header("Content-Type", "application/xml")
+        .body(xml))
 }
 
 #[derive(Clone, Serialize)]
