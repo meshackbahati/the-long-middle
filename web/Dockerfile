@@ -21,7 +21,7 @@ RUN cargo install oxidite-cli --version 2.3.1 || \
 WORKDIR /usr/src/app
 
 # Copy the web source
-COPY web/ .
+COPY . .
 
 # Ensure the configuration is set to listen on 0.0.0.0 for Docker
 RUN sed -i 's/host = "127.0.0.1"/host = "0.0.0.0"/g' oxidite.toml
