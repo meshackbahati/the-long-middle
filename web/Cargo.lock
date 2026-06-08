@@ -2670,6 +2670,8 @@ checksum = "1a80800c0488c3a21695ea981a54918fbb37abf04f4d0720c453632255e2ff0e"
 [[package]]
 name = "oxidite"
 version = "2.3.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7034cd1fa908f3290a6bc4bb83c16bcbeca9f32e8cf28f5530ad17fddd51a119"
 dependencies = [
  "chrono",
  "oxidite-auth",
@@ -2695,6 +2697,8 @@ dependencies = [
 [[package]]
 name = "oxidite-auth"
 version = "2.3.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "fa0f21cf2fc36baa30ceb4567eab833d098024059722b955e720941d8b17b45d"
 dependencies = [
  "argon2",
  "async-trait",
@@ -2725,6 +2729,8 @@ dependencies = [
 [[package]]
 name = "oxidite-cache"
 version = "2.3.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "26735389c4d8b4c6009a108523a9e7e1be16dba9ef0ea1ebf190a95b3d58f79d"
 dependencies = [
  "async-trait",
  "redis",
@@ -2737,6 +2743,8 @@ dependencies = [
 [[package]]
 name = "oxidite-config"
 version = "2.3.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "59e8eff5ae1151d9fb5441268f850eccb08224ae972d1d8ef0bdd43618776b2a"
 dependencies = [
  "dotenv",
  "notify",
@@ -2750,6 +2758,8 @@ dependencies = [
 [[package]]
 name = "oxidite-core"
 version = "2.3.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "330a26b65274a73d21c1936160669d5d4febfbdc944123d9905594cca6ec3e7b"
 dependencies = [
  "async-trait",
  "base64 0.22.1",
@@ -2781,6 +2791,8 @@ dependencies = [
 [[package]]
 name = "oxidite-db"
 version = "2.3.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "325e0e19a3d972a8cbe1028c96b02bf2e51e773526d8639f82d4fddc244c0123"
 dependencies = [
  "async-trait",
  "chrono",
@@ -2798,6 +2810,8 @@ dependencies = [
 [[package]]
 name = "oxidite-graphql"
 version = "2.3.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8880ba207ee50f46b0eda374c6bc6863630d7c516226503b1bbc26859194fc3b"
 dependencies = [
  "async-trait",
  "chrono",
@@ -2816,6 +2830,8 @@ dependencies = [
 [[package]]
 name = "oxidite-macros"
 version = "2.3.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b736a9ebe5ee86f3e1ec3b12c9d8a96d32911e9cff8192d6353dd07d9d73bf89"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -2825,6 +2841,8 @@ dependencies = [
 [[package]]
 name = "oxidite-mail"
 version = "2.3.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5d99b88b169eb9487bb7902b734cd172c2f4b31386fb4a79255764e87b55c70f"
 dependencies = [
  "async-trait",
  "base64 0.22.1",
@@ -2838,6 +2856,8 @@ dependencies = [
 [[package]]
 name = "oxidite-middleware"
 version = "2.3.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0f66d00f80b0e4881b691c3e7058472261cd61b86c985b64e1fe47e00f3d8e7a"
 dependencies = [
  "base64 0.22.1",
  "bytes",
@@ -2860,6 +2880,8 @@ dependencies = [
 [[package]]
 name = "oxidite-plugin"
 version = "2.3.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "512798ebbeaf93eda6b8e5d08c74c9ec8e938985979307e615c89619597a1226"
 dependencies = [
  "async-trait",
  "chrono",
@@ -2875,6 +2897,8 @@ dependencies = [
 [[package]]
 name = "oxidite-queue"
 version = "2.3.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ea9eaefd1d04b390b42aeec41b3bd7ca63cf9acc9d5bc6d440ce9e89190b9e8b"
 dependencies = [
  "async-trait",
  "chrono",
@@ -2891,6 +2915,8 @@ dependencies = [
 [[package]]
 name = "oxidite-realtime"
 version = "2.3.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d10e5f135b431c8cdaed5bd4e14b49397e40fb3cb46d2bb0848ad2aa152cad18"
 dependencies = [
  "async-trait",
  "futures",
@@ -2906,6 +2932,8 @@ dependencies = [
 [[package]]
 name = "oxidite-storage"
 version = "2.3.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3356df91ca043628883cb710ab40d53c16488716f0d1340cd04736e71a0f5eaa"
 dependencies = [
  "async-trait",
  "aws-config",
@@ -2921,6 +2949,8 @@ dependencies = [
 [[package]]
 name = "oxidite-template"
 version = "2.3.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "41aec200c205e739d9f6c0723224f4e1ae52a0ea49cfbdd403fbdcc00b6cf3d7"
 dependencies = [
  "bytes",
  "http 1.4.1",
@@ -2937,6 +2967,8 @@ dependencies = [
 [[package]]
 name = "oxidite-utils"
 version = "2.3.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "43efdde2b836f0593061c5f50bbbf4aaeb1985b51620b1c9c7494d8951fccf1e"
 dependencies = [
  "base64 0.22.1",
  "chrono",
